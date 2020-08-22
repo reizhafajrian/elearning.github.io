@@ -5,9 +5,10 @@ body {
 
 .introduce {
     height: 100vh;
-    display: flex;
+    display: grid;
     flex-direction: row;
     background-color: #f7f7f7;
+    grid-template-columns: 1fr 1fr;
 }
 
 .title h4 {
@@ -26,7 +27,6 @@ body {
 
 .text-introduce {
     text-align: center;
-    width: 50%;
 }
 
 .text-introduce h1 {
@@ -35,7 +35,6 @@ body {
 
 .image-introduce {
     position: relative;
-    width: 50%;
 }
 
 .nav-item {
@@ -51,6 +50,8 @@ body {
     left: 0;
     right: 0;
     text-align: center;
+    width: 30%;
+    transform: translateX(116%);
 }
 
 .container-name h5 {
@@ -63,7 +64,6 @@ body {
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 90px;
     transition: ease-in-out 2s;
     transform: translateX(800px);
 }
@@ -74,4 +74,113 @@ body {
 
 .collapse {
     margin-left: auto;
+}
+
+.login-signup {
+    position: relative;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+}
+
+.sign-up {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1 {
+    margin-top: 40px;
+    align-self: center;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.input-field input {
+    max-width: 360px;
+    width: 100%;
+    background: none;
+    background-color: white;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.panel img {
+    width: 100%;
+}
+
+.sign-up h1 {
+    margin-top: 200px;
+}
+
+.signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #b2ebf2;
+}
+
+.about-us {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100px;
+}
+
+@media (max-width :1080px) {
+    .introduce {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .signup {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    text-align: center;
+    box-shadow: 0px 0px 2px crimson;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 2px;
+}
+
+.footer p {
+    margin-top: auto;
+    margin-bottom: auto;
 }
